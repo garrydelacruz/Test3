@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test 3</title>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/test3.js"></script>
+</head>
+<body>
+	<button id="clickme">Click Me!</button>
+    <button id="clear">Clear</button>
+    <div id="results"></div>
+<script>
+	$('#clickme').click(function() {
+		Test3.DoIt($('#results'));
+	});
+	$('#clear').click(function() {
+		$('#results').html('');
+	});
+</script>    
+</body>
+</html>
